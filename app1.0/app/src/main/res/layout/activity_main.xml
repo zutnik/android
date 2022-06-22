@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="<<Hello your order is >>"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/textView" app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            android:layout_marginBottom="356dp"/>
+    <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/radioGroup" android:layout_marginTop="77dp"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup2" android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginEnd="38dp" android:layout_marginRight="38dp">
+        <TextView
+                android:text="Цвет"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView2"/>
+        <RadioButton
+                android:text="Синий"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+        <RadioButton
+                android:text="Красний"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton2"/>
+        <RadioButton
+                android:text="Чорный"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton3"/>
+        <RadioButton
+                android:text="Фиолетовые"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton4"/>
+    </RadioGroup>
+    <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/radioGroup2" android:layout_marginTop="1dp"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="1dp" app:layout_constraintTop_toTopOf="@+id/radioGroup"
+            app:layout_constraintBottom_toBottomOf="@+id/radioGroup" android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp" app:layout_constraintVertical_bias="1.0">
+        <TextView
+                android:text="Цена"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView3"/>
+        <RadioButton
+                android:text="от 2000 до 3000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton5"/>
+        <RadioButton
+                android:text="от 1000 до 2000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton6"/>
+        <RadioButton
+                android:text="от 500 до 1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton7"/>
+        <RadioButton
+                android:text="до 500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/radioButton8"/>
+    </RadioGroup>
+    <Button
+            android:text="Enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="39dp" android:layout_marginStart="39dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="234dp"/>
+    <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button"
+            android:layout_marginEnd="88dp" android:layout_marginRight="88dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
